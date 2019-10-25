@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--meta l ta7t de le l Responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <title>Pixel Art Maker</title>
+    </head>
+    <body>
+        <!--Start Top Header-->
+        <div class="header">
+            <h1 class="header text-center">Pixel Art Maker</h1>
+
+            <!--Start  Settings-->
+            <div class="Settings">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md grid">
+                            <form id="sizePicker">
+                                <p>Grid Height:</p>
+                                <input type="number" name="inputHeight" id="height" min="1" value="1">
+                                <p>Grid Width:</p>
+                                <input type="number" name="inputWidth" id="width" min="1" value="1">
+                                <button type="button" onclick="makeGrid()" id="submit" class="btn btn-secondary btn-sm">Submit</button>    
+                            </form>
+                        </div>
+
+                        <div class="col-md color">
+                            <p>Pick Your Color:</p>
+                            <input type="color" id="colorPicker" value="#00BFFF">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!--End    Settings-->
+        </div>
+        <!--End Top Header-->
+
+        <!-- Start Deisgn Art -->
+        <div class=" draw container ">
+            <p id="pixelCanvas"> </p>
+        </div>
+        <!-- End Deisgn Art -->
+           
+        <script src="design.js"></script>
+    </body>
+</html>
